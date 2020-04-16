@@ -1025,7 +1025,7 @@
 
 	cpubw: qcom,cpubw {
 		compatible = "qcom,devbw";
-		governor = "bw_hwmon";
+		governor = "cpufreq";
 		qcom,src-dst-ports = <1 512>;
 		qcom,active-only;
 		qcom,bw-tbl =
@@ -1044,7 +1044,7 @@
 
 	mincpubw: qcom,mincpubw {
 		compatible = "qcom,devbw";
-		governor = "performance";
+		governor = "cpufreq";
 		qcom,src-dst-ports = <1 512>;
 		qcom,active-only;
 		qcom,bw-tbl =
